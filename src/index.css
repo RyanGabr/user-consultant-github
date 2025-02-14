@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    line-height: 0;
+} */
+
+@media(max-width: 1240px) {
+    .repos{
+        grid-template-columns: 1fr 1fr;
+    }
+    .header{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 940px){
+    .repos{
+        grid-template-columns: 1fr;
+    }
+}
+/* @media(max-width: 865px){
+    .input{
+        width: 300px;
+    }
+} */
