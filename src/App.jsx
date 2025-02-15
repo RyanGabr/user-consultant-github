@@ -96,7 +96,7 @@ function App() {
               userData={userData}
             />
             
-            <div className='flex items-center gap-3'>
+            <div className={`items-center gap-3 ${repos ? "flex" : "hidden"}`}>
               <h1>Repositórios</h1>
               <span className='rounded-full bg-black/10 text-xs px-2 py-0.5 text-zinc-600'>{favoriteRepos} Favoritos</span>
             </div>

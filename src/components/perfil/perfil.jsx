@@ -6,7 +6,7 @@ export function Perfil({ userData }) {
                     <div className="flex items-center gap-5">
                         <img src={userData.avatar_url} className="w-16 h-16 rounded-full" alt="user_avatar" />
                         <div className="leading-[0px]">
-                            <h1 className="text-lg">{userData.name}</h1>
+                            <h1 className="text-lg">{userData.login}</h1>
                             <span className="text-xs text-zinc-500">Seguidores: {new Intl.NumberFormat().format(userData.followers)}</span>
                         </div>
                     </div>
