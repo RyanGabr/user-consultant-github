@@ -1,4 +1,5 @@
 import { FaStar } from "react-icons/fa";
+import { languageVerification } from "./language-verification";
 
 export function Repo({ name, language, handleFavorite, id, favorite, url }) {
     return (
@@ -9,12 +10,26 @@ export function Repo({ name, language, handleFavorite, id, favorite, url }) {
                         <div>
                             {name}
                         </div>
-                        <div className={`text-xs flex items-center gap-1 ${language === "TypeScript" ? "text-blue-600" : "" |
-                                language === "JavaScript" ? "text-yellow-600" : ""
-                            }`}>
-                            <div className={`h-1.5 w-1.5 rounded-full ${language === "TypeScript" ? "bg-blue-600" : "" |
-                                    language === "JavaScript" ? "bg-yellow-600" : ""
-                                }`}></div>
+                        <div className={`text-xs flex items-center gap-1 ${
+                            language === "TypeScript" ? "text-blue-600" : "" |
+                            language === "JavaScript" ? "text-yellow-600" : "" |
+                            language === "Python" ? "text-yellow-500" : "" |
+                            language === "C" ? "text-blue-500" : "" |
+                            language === "HTML" ? "text-orange-500" : "" |
+                            language === "Go" ? "text-cyan-600" : "" |
+                            language === "CSS" ? "text-blue-600" : ""
+
+                        }`}>
+                            <div className={`h-1.5 w-1.5 rounded-full ${
+                                language === "TypeScript" ? "bg-blue-600" : "" |
+                                language === "JavaScript" ? "bg-yellow-600" : "" |
+                                language === "Python" ? "bg-yellow-500" : "" |
+                                language === "C" ? "bg-blue-500" : "" |
+                                language === "HTML" ? "bg-orange-500" : "" |
+                                language === "Go" ? "bg-cyan-600" : "" |
+                                language === "CSS" ? "bg-blue-600" : ""
+
+                            }`}></div>
                             {language}
                         </div>
                     </a>

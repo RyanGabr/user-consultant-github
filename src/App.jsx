@@ -96,7 +96,7 @@ function App() {
               userData={userData}
             />
             
-            <div className={`items-center gap-3 ${repos.length < 0 ? "flex" : "hidden"}`}>
+            <div className={`items-center gap-3 ${Object.keys(userData).length == 0 ? "hidden" : "flex"}`}>
               <h1>Repositórios</h1>
               <span className='rounded-full bg-black/10 text-xs px-2 py-0.5 text-zinc-600'>{favoriteRepos} Favoritos</span>
             </div>
